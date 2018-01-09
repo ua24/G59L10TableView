@@ -17,9 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
-		cars = ["e28", "e30", "e36"]
+		cars = ["e28", "e30", "e36", "e28", "e30", "e36", "e28", "e30", "e36", "e28", "e30", "e36"]
 		tableView.dataSource = self
-		tableView.backgroundColor = .blue
+//		tableView.backgroundColor = .blue
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +32,5 @@ class ViewController: UIViewController, UITableViewDataSource {
 		return cell
 	}
 	
-
-
 }
 
