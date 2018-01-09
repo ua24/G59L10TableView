@@ -27,7 +27,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = UITableViewCell()
+		let cell = tableView.dequeueReusableCell(withIdentifier: "carCell", for: indexPath)
+		cell.textLabel?.text = cars[indexPath.row]
 		return cell
 	}
 	
