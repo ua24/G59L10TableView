@@ -23,6 +23,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //		tableView.backgroundColor = .blue
 	}
 	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		let cell = (sender as! UITableViewCell)
+		let index = tableView.indexPath(for: cell)!.row
+		let selectedCar = cars[index]
+		segue.destination.title = selectedCar
+		
+	}
+	
 	// MARK: - UITableViewDataSource
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
