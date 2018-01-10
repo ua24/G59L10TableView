@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		print(indexPath)
 		tableView.deselectRow(at: indexPath, animated: true)
+//		performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
 	}
 	
 	

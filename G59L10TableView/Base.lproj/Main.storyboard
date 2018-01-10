@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +33,10 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="xPx-8l-t3R" kind="show" id="Wrh-az-lUx"/>
+                                            <segue destination="xPx-8l-t3R" kind="show" id="Wrh-az-lUx">
+                                                <segue key="commit" inheritsFrom="parent" id="tke-F5-s9Y"/>
+                                                <segue key="preview" inheritsFrom="commit" id="FGB-4k-rp0"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -46,6 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="lCH-tS-CUs" id="hUC-LZ-JdA"/>
+                        <segue destination="xPx-8l-t3R" kind="show" id="WWW-j2-FCt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -59,6 +64,12 @@
                     <view key="view" contentMode="scaleToFill" id="A9h-5M-uk2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vja-Wm-uN7">
+                                <rect key="frame" x="28" y="136" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lIT-qO-tUV"/>
                     </view>
@@ -86,4 +97,7 @@
             <point key="canvasLocation" x="-244" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WWW-j2-FCt"/>
+    </inferredMetricsTieBreakers>
 </document>
