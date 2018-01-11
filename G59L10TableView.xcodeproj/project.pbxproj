@@ -12,6 +12,8 @@
 		4C1C244A200537AB00450FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C2448200537AB00450FAB /* Main.storyboard */; };
 		4C1C244C200537AB00450FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C244B200537AB00450FAB /* Assets.xcassets */; };
 		4C1C244F200537AB00450FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C244D200537AB00450FAB /* LaunchScreen.storyboard */; };
+		4C661EEE2007EDEB00B781F9 /* MeasumentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C661EEC2007EDEB00B781F9 /* MeasumentsTVCell.swift */; };
+		4C661EEF2007EDEB00B781F9 /* MeasumentsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C661EED2007EDEB00B781F9 /* MeasumentsTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4C1C244B200537AB00450FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1C244E200537AB00450FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1C2450200537AB00450FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C661EEC2007EDEB00B781F9 /* MeasumentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasumentsTVCell.swift; sourceTree = "<group>"; };
+		4C661EED2007EDEB00B781F9 /* MeasumentsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasumentsTVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4C1C2444200537AB00450FAB /* AppDelegate.swift */,
 				4C1C2446200537AB00450FAB /* ViewController.swift */,
+				4C661EEC2007EDEB00B781F9 /* MeasumentsTVCell.swift */,
+				4C661EED2007EDEB00B781F9 /* MeasumentsTVCell.xib */,
 				4C1C2448200537AB00450FAB /* Main.storyboard */,
 				4C1C244B200537AB00450FAB /* Assets.xcassets */,
 				4C1C244D200537AB00450FAB /* LaunchScreen.storyboard */,
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1C244F200537AB00450FAB /* LaunchScreen.storyboard in Resources */,
+				4C661EEF2007EDEB00B781F9 /* MeasumentsTVCell.xib in Resources */,
 				4C1C244C200537AB00450FAB /* Assets.xcassets in Resources */,
 				4C1C244A200537AB00450FAB /* Main.storyboard in Resources */,
 			);
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C661EEE2007EDEB00B781F9 /* MeasumentsTVCell.swift in Sources */,
 				4C1C2447200537AB00450FAB /* ViewController.swift in Sources */,
 				4C1C2445200537AB00450FAB /* AppDelegate.swift in Sources */,
 			);

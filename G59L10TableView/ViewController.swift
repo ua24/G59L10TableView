@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		cars = ["e28", "e30", "e36", "e28", "e30", "e36", "e28", "e30", "e36", "e28", "e30", "e36"]
+		let nib = UINib(nibName: "MeasumentsTVCell", bundle: nil)
+		tableView.register(nib, forCellReuseIdentifier: "MeasumentsTVCell")
 		tableView.dataSource = self
 		tableView.delegate = self
 //		tableView.backgroundColor = .blue
@@ -38,8 +40,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "carCell", for: indexPath)
-		cell.textLabel?.text = cars[indexPath.row]
+		let cell = tableView.dequeueReusableCell(withIdentifier: "MeasumentsTVCell", for: indexPath) as! MeasumentsTVCell
+		cell.daysLabel?.text = cars[indexPath.row]
+		cell.imageBox.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(256))/255,
+												green: CGFloat(arc4random_uniform(256))/255,
+												blue: CGFloat(arc4random_uniform(256))/255,
+												alpha: 1)
 		print(indexPath)
 		return cell
 	}
